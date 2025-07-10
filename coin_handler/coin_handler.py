@@ -107,7 +107,7 @@ class CoinHandler:
             return
 
         print(f"[Dispense] Sweeping servo for ₱{denom} coin...")
-        for pos in range(BACKWARD, FORWARD + 1, 10):
+        for pos in range(BACKWARD, FORWARD):
             self.set_angle(servo, pos)
         for pos in range(FORWARD, BACKWARD - 1, -10):
             self.set_angle(servo, pos)
