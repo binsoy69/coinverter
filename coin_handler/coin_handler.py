@@ -18,32 +18,30 @@ class CoinHandler:
 
         GPIO.setmode(GPIO.BCM)
         GPIO.setup(self.coin_pin, GPIO.IN, pull_up_down=GPIO.PUD_UP)
+        
 
         # Sorter servo setup
         GPIO.setup(self.sorter_servo_pin, GPIO.OUT)
-        self.sorter_pwm = GPIO.PWM(self.sorter_servo_pin, 50)
-        self.sorter_pwm.start(0)
+        self.sorter_servo = GPIO.PWM(self.sorter_servo_pin, 50)
+        self.sorter_servo.start(0)
         self.center_sorter()
 
-        # Dispensers: store just pin numbers for raw set_angle
-        for pin in self.dispenser_pins.values():
-            GPIO.setup(pin, GPIO.OUT)
+        # Dispenser servos setup
+        self.dispenser_pins = dispenser_pins  # { denomination: pin }
+        self.dispenser_servos = {}  # { pin: servo }
+        self.init_dispensers()
 
         GPIO.add_event_detect(self.coin_pin, GPIO.FALLING, callback=self.pulse_detected, bouncetime=50)
 
         print("[CoinHandler] Ready")
 
     # --- General servo function ---
-    def set_angle(self, pin, angle):
-        """Move servo on specified pin to angle (0-180°)"""
-        pwm = GPIO.PWM(pin, 50)
-        pwm.start(0)
+    def set_angle(self, servo, angle):
         duty = 2 + (angle / 18)
-        pwm.ChangeDutyCycle(duty)
-        time.sleep(0.015)  # Quick step
-        pwm.ChangeDutyCycle(0)
-        pwm.stop()
-
+        servo.ChangeDutyCycle(duty)
+        time.sleep(0.002)
+        servo.ChangeDutyCycle(0)
+      
     # --- Coin detection + sorting ---
     def pulse_detected(self, channel):
         now = time.time()
@@ -73,34 +71,48 @@ class CoinHandler:
             self.sort_right()
         else:
             print(f"[Warning] Unknown ₱{value}")
+            self.center_sorter()
 
     def sort_left(self):
         print("[Sort] LEFT")
-        self.set_angle(self.sorter_servo_pin, 45)
+        self.set_angle(self.sorter_servo, 45)
         self.center_sorter()
 
     def sort_right(self):
         print("[Sort] RIGHT")
-        self.set_angle(self.sorter_servo_pin, 135)
+        self.set_angle(self.sorter_servo, 135)
         self.center_sorter()
 
     def center_sorter(self):
         print("[Sort] CENTER")
-        self.set_angle(self.sorter_servo_pin, 90)
+        self.set_angle(self.sorter_servo, 90)
+
+    def init_dispensers(self):
+        """Initialize dispenser servos, store PWM objects, and reset to BACKWARD angle."""
+        for denom, pin in self.dispenser_pins.items():
+            GPIO.setup(pin, GPIO.OUT)
+            servo = GPIO.PWM(pin, 50)
+            servo.start(0)
+            self.dispenser_servos[pin] = servo
+            self.set_angle(servo, BACKWARD)
+            print(f"[Init] Dispenser for ₱{denom} on GPIO {pin} initialized to BACKWARD")
 
     # --- Dispenser sweeping logic ---
     def dispense_coin(self, denom):
         pin = self.dispenser_pins.get(denom)
-        if not pin:
-            print(f"[Error] No servo mapped for ₱{denom}")
+        servo = self.dispenser_servos.get(pin)
+
+        if not servo:
+            print(f"[Error] No initialized servo for ₱{denom}")
             return
 
         print(f"[Dispense] Sweeping servo for ₱{denom} coin...")
         for pos in range(BACKWARD, FORWARD + 1, 10):
-            self.set_angle(pin, pos)
+            self.set_angle(servo, pos)
         for pos in range(FORWARD, BACKWARD - 1, -10):
-            self.set_angle(pin, pos)
+            self.set_angle(servo, pos)
         print(f"[Dispense] ₱{denom} complete.\n")
+
 
     # --- Cleanup ---
     def cleanup(self):
