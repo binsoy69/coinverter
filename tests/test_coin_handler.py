@@ -5,7 +5,7 @@ from coin_handler.coin_handler import CoinHandler
 import time
 
 try:
-    coin_pin = 17
+    coin_pin = 24
     sorter_servo_pin = 18
     dispenser_pins = {
         1: 19,

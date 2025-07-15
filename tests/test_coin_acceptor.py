@@ -3,7 +3,7 @@ import time
 from datetime import datetime
 
 # GPIO Pin
-COIN_PIN = 17
+COIN_PIN = 24
 
 # Timing thresholds
 COIN_TIMEOUT = 0.5  # seconds to wait before assuming pulse group is done

@@ -2,7 +2,7 @@ import RPi.GPIO as GPIO
 import time
 import threading
 
-FORWARD = 160
+FORWARD = 170
 BACKWARD = 0
 
 class CoinHandler:
@@ -75,17 +75,17 @@ class CoinHandler:
 
     def sort_left(self):
         print("[Sort] LEFT")
-        self.set_angle(self.sorter_servo, 45)
+        self.set_angle(self.sorter_servo, 95)
         self.center_sorter()
 
     def sort_right(self):
         print("[Sort] RIGHT")
-        self.set_angle(self.sorter_servo, 135)
+        self.set_angle(self.sorter_servo, 35)
         self.center_sorter()
 
     def center_sorter(self):
         print("[Sort] CENTER")
-        self.set_angle(self.sorter_servo, 90)
+        self.set_angle(self.sorter_servo, 65)
 
     def init_dispensers(self):
         """Initialize dispenser servos, store PWM objects, and reset to BACKWARD angle."""
