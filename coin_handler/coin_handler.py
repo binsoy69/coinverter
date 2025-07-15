@@ -66,8 +66,10 @@ class CoinHandler:
         print(f"[Coin] Detected: ₱{value}")
 
         if value in [1, 5]:
+            print(f"[Sort] Sorting ₱{value} coin")
             self.sort_left()
         elif value in [10, 20]:
+            print(f"[Sort] Sorting ₱{value} coin")
             self.sort_right()
         else:
             print(f"[Warning] Unknown ₱{value}")
