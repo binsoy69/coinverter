@@ -39,7 +39,7 @@ class CoinHandler:
     def set_angle(self, servo, angle):
         duty = 2 + (angle / 18)
         servo.ChangeDutyCycle(duty)
-        time.sleep(0.002)
+        time.sleep(0.5)
         servo.ChangeDutyCycle(0)
       
     # --- Coin detection + sorting ---
@@ -77,17 +77,19 @@ class CoinHandler:
 
     def sort_left(self):
         print("[Sort] LEFT")
-        self.set_angle(self.sorter_servo, 95)
+        self.set_angle(self.sorter_servo, 120)
+        time.sleep(0.5)
         self.center_sorter()
 
     def sort_right(self):
         print("[Sort] RIGHT")
-        self.set_angle(self.sorter_servo, 35)
+        self.set_angle(self.sorter_servo, 60)
+        time.sleep(0.5)
         self.center_sorter()
 
     def center_sorter(self):
         print("[Sort] CENTER")
-        self.set_angle(self.sorter_servo, 65)
+        self.set_angle(self.sorter_servo, 90)
 
     def init_dispensers(self):
         """Initialize dispenser servos, store PWM objects, and reset to BACKWARD angle."""
