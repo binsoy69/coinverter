@@ -1,7 +1,7 @@
 from gpiozero import DigitalInputDevice
 import time
 
-IR_SENSOR_PIN = 4  # Must match BillHandler config
+IR_SENSOR_PIN = 18  # Must match BillHandler config
 sensor = DigitalInputDevice(IR_SENSOR_PIN)
 
 print("[IR Test] Waiting for bill (LOW = detected)...")

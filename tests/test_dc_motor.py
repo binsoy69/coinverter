@@ -1,9 +1,9 @@
 import time
 from gpiozero import Motor, PWMOutputDevice
 
-MOTOR_IN1 = 16
-MOTOR_IN2 = 20
-PWM_PIN = 21
+MOTOR_IN1 = 20
+MOTOR_IN2 = 21
+PWM_PIN = 16
 
 motor = Motor(forward=MOTOR_IN1, backward=MOTOR_IN2)
 pwm_speed = PWMOutputDevice(PWM_PIN)
