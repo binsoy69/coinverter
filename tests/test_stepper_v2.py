@@ -36,8 +36,10 @@ def main(stdscr):
     while True:
         key = stdscr.getch()
         if key == curses.KEY_RIGHT:
+            print("Spinning motor forward")
             spin_motor(True)
         elif key == curses.KEY_LEFT:
+            print("Spinning motor backward")
             spin_motor(False)
         elif key == ord('q'):
             break
