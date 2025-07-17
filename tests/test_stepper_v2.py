@@ -17,11 +17,11 @@ lead_screw_lead = 8.0
 
 steps_per_mm = (steps_per_revolution * microsteps) / lead_screw_lead
 mm_per_second = 160.0
-step_delay = 1.0 / (steps_per_mm * mm_per_second)  # Delay between steps
+step_delay = 1.0 / (steps_per_mm * mm_per_second)
 
 def spin_motor(direction):
     GPIO.output(DIR_PIN, direction)
-    for _ in range(int(steps_per_mm)):  # One mm worth of steps
+    for _ in range(int(steps_per_mm)):
         GPIO.output(STEP_PIN, GPIO.HIGH)
         time.sleep(step_delay / 2)
         GPIO.output(STEP_PIN, GPIO.LOW)
@@ -36,12 +36,13 @@ def main(stdscr):
     while True:
         key = stdscr.getch()
         if key == curses.KEY_RIGHT:
-            print("Spinning motor forward")
+            print("➡️ Forward pressed")
             spin_motor(True)
         elif key == curses.KEY_LEFT:
-            print("Spinning motor backward")
+            print("⬅️ Reverse pressed")
             spin_motor(False)
         elif key == ord('q'):
+            print("🛑 Quitting program")
             break
 
 curses.wrapper(main)
