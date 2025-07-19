@@ -36,10 +36,16 @@ class CoinHandler:
         print("[CoinHandler] Ready")
 
     # --- General servo function ---
-    def set_angle(self, servo, angle):
+    def set_angle_servo(self, servo, angle):
         duty = 2 + (angle / 18)
         servo.ChangeDutyCycle(duty)
         time.sleep(0.5)
+        servo.ChangeDutyCycle(0)
+
+    def set_angle_dispenser(self, servo, angle):
+        duty = 2 + (angle / 18)
+        servo.ChangeDutyCycle(duty)
+        time.sleep(0.002)
         servo.ChangeDutyCycle(0)
       
     # --- Coin detection + sorting ---
@@ -77,19 +83,19 @@ class CoinHandler:
 
     def sort_left(self):
         print("[Sort] LEFT")
-        self.set_angle(self.sorter_servo, 120)
+        self.set_angle_servo(self.sorter_servo, 120)
         time.sleep(0.5)
         self.center_sorter()
 
     def sort_right(self):
         print("[Sort] RIGHT")
-        self.set_angle(self.sorter_servo, 60)
+        self.set_angle_servo(self.sorter_servo, 60)
         time.sleep(0.5)
         self.center_sorter()
 
     def center_sorter(self):
         print("[Sort] CENTER")
-        self.set_angle(self.sorter_servo, 90)
+        self.set_angle_servo(self.sorter_servo, 90)
 
     def init_dispensers(self):
         """Initialize dispenser servos, store PWM objects, and reset to BACKWARD angle."""
@@ -98,7 +104,7 @@ class CoinHandler:
             servo = GPIO.PWM(pin, 50)
             servo.start(0)
             self.dispenser_servos[pin] = servo
-            self.set_angle(servo, BACKWARD)
+            self.set_angle_servo(servo, BACKWARD)
             print(f"[Init] Dispenser for ₱{denom} on GPIO {pin} initialized to BACKWARD")
 
     # --- Dispenser sweeping logic ---
@@ -112,9 +118,9 @@ class CoinHandler:
 
         print(f"[Dispense] Sweeping servo for ₱{denom} coin...")
         for pos in range(BACKWARD, FORWARD):
-            self.set_angle(servo, pos)
+            self.set_angle_dispenser(servo, pos)
         for pos in range(FORWARD, BACKWARD - 1, -1):
-            self.set_angle(servo, pos)
+            self.set_angle_dispenser(servo, pos)
         print(f"[Dispense] ₱{denom} complete.\n")
 
 
