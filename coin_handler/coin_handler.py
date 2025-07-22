@@ -6,7 +6,7 @@ FORWARD = 170
 BACKWARD = 0
 
 class CoinHandler:
-    def __init__(self, coin_pin, sorter_servo_pin, dispenser_pins, pulse_timeout=1.0):
+    def __init__(self, coin_pin, sorter_servo_pin, dispenser_pins, pulse_timeout=0.5):
         self.coin_pin = coin_pin
         self.sorter_servo_pin = sorter_servo_pin
         self.dispenser_pins = dispenser_pins
@@ -31,7 +31,7 @@ class CoinHandler:
         self.dispenser_servos = {}  # { pin: servo }
         self.init_dispensers()
 
-        GPIO.add_event_detect(self.coin_pin, GPIO.FALLING, callback=self.pulse_detected, bouncetime=50)
+        GPIO.add_event_detect(self.coin_pin, GPIO.FALLING, callback=self.pulse_detected, bouncetime=10)
 
         print("[CoinHandler] Ready")
 
@@ -83,19 +83,19 @@ class CoinHandler:
 
     def sort_left(self):
         print("[Sort] LEFT")
-        self.set_angle_servo(self.sorter_servo, 120)
+        self.set_angle_servo(self.sorter_servo, 110)
         time.sleep(0.5)
         self.center_sorter()
 
     def sort_right(self):
         print("[Sort] RIGHT")
-        self.set_angle_servo(self.sorter_servo, 60)
+        self.set_angle_servo(self.sorter_servo, 50)
         time.sleep(0.5)
         self.center_sorter()
 
     def center_sorter(self):
         print("[Sort] CENTER")
-        self.set_angle_servo(self.sorter_servo, 90)
+        self.set_angle_servo(self.sorter_servo, 87)
 
     def init_dispensers(self):
         """Initialize dispenser servos, store PWM objects, and reset to BACKWARD angle."""

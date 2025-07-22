@@ -9,15 +9,15 @@ Y_STEP = 19
 Y_DIR = 26
 
 # Movement settings
-STEPS = 100
-DELAY = 0.001
+STEPS = 360
+DELAY = 0.00000078125
 
 # GPIO setup
 GPIO.setmode(GPIO.BCM)
 GPIO.setup([X_STEP, X_DIR, Y_STEP, Y_DIR], GPIO.OUT)
 
 def move_stepper(step_pin, dir_pin, direction=True, steps=STEPS, delay=DELAY):
-    GPIO.output(dir_pin, GPIO.HIGH if direction else GPIO.LOW)
+    GPIO.output(dir_pin, GPIO.LOW if direction else GPIO.HIGH)
     for _ in range(steps):
         GPIO.output(step_pin, GPIO.HIGH)
         time.sleep(delay)
@@ -60,7 +60,7 @@ def main(stdscr):
                 break
 
             stdscr.refresh()
-            time.sleep(0.05)
+            time.sleep(0.005)
 
     except Exception as e:
         stdscr.addstr(12, 0, f"[Error] {str(e)}")
