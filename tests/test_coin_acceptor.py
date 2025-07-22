@@ -25,7 +25,12 @@ def coin_pulse_callback(channel):
     global pulse_count, last_pulse_time, pulse_start_time
 
     now = time.time()
-    if now - last_pulse_time > COIN_TIMEOUT:
+
+    # Calculate interval between pulses
+    interval = now - last_pulse_time
+    print(f"[{datetime.now().strftime('%H:%M:%S')}] Pulse #{pulse_count + 1} detected — Δt = {interval:.3f}s")
+
+    if interval > COIN_TIMEOUT:
         # Too long since last pulse; reset count and start time
         pulse_count = 0
         pulse_start_time = now
@@ -39,9 +44,9 @@ def coin_pulse_callback(channel):
 # Setup
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(COIN_PIN, GPIO.IN, pull_up_down=GPIO.PUD_UP)
-GPIO.add_event_detect(COIN_PIN, GPIO.FALLING, callback=coin_pulse_callback, bouncetime=1)
+GPIO.add_event_detect(COIN_PIN, GPIO.FALLING, callback=coin_pulse_callback, bouncetime=20)
 
-print("Waiting for coin insert... Press Ctrl+C to stop.")
+print("💰 Waiting for coin insert... Press Ctrl+C to stop.")
 
 try:
     while True:
@@ -50,11 +55,12 @@ try:
             coin_value = COIN_MAP.get(pulse_count, f"Unknown ({pulse_count} pulses)")
             duration = last_pulse_time - pulse_start_time if pulse_start_time else 0
             print(f"[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] Coin inserted: {coin_value}")
-            print(f"  -> Time elapsed during pulses: {duration:.3f} seconds")
+            print(f"  → Pulse count: {pulse_count}")
+            print(f"  → Time elapsed: {duration:.3f} seconds\n")
             # Reset for next coin
             pulse_count = 0
             pulse_start_time = None
-        time.sleep(0.05)
+        time.sleep(0.1)
 except KeyboardInterrupt:
     print("\nExiting...")
     GPIO.cleanup()
