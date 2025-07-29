@@ -1,0 +1,5321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1280</width>
+    <height>800</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">QWidget {
+    background-color: #ffffff;
+}</string>
+   </property>
+   <widget class="QStackedWidget" name="main_stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1280</width>
+      <height>800</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="Page1_00">
+     <widget class="QFrame" name="mainFrame">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>20</y>
+        <width>1241</width>
+        <height>761</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QFrame {
+    background-color: #0f151f;
+	border-radius: 30px;
+}
+</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QLabel" name="label_3">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>20</y>
+         <width>141</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Montserrat</family>
+         <pointsize>18</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    color: #ffffff;  /* or just #fff */
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Coinnect</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_4">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>60</y>
+         <width>231</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Montserrat</family>
+         <pointsize>8</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    color: #ffffff;  /* or just #fff */
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Simplifying your financial transaction!</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="main_timeLabel">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>680</y>
+         <width>111</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Montserrat</family>
+         <pointsize>12</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="layoutDirection">
+        <enum>Qt::LeftToRight</enum>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    color: #ffffff;  /* or just #fff */
+	 qproperty-alignment: 'AlignHCenter';
+
+}
+</string>
+       </property>
+       <property name="text">
+        <string>1:00PM</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="main_DateLabel">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>710</y>
+         <width>171</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Montserrat</family>
+         <pointsize>9</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    color: #ffffff;  /* or just #fff */
+	 qproperty-alignment: 'AlignHCenter';
+
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Monday | 12.07.2025</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="main_logo">
+       <property name="geometry">
+        <rect>
+         <x>340</x>
+         <y>180</y>
+         <width>290</width>
+         <height>290</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>C:/Users/Asus Tuf/Documents/dondon my documents/Research/Coinnect UI/2 Icons/Coinnect White.png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="main_startBtn">
+       <property name="geometry">
+        <rect>
+         <x>360</x>
+         <y>550</y>
+         <width>241</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Montserrat</family>
+         <pointsize>12</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    background-color: white;
+    color: black;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    padding: 10px 20px;
+}
+
+QPushButton:hover {
+    background-color: #e0e0e0;  /* light gray */
+}
+
+QPushButton:pressed {
+    background-color: #d5d5d5;
+    padding-top: 8px;  /* simulate press-in */
+    padding-bottom: 7px;
+    box-shadow: inset 0px 2px 4px rgba(255, 255, 255, 0.4); /* lighter shadow */
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Start Transaction</string>
+       </property>
+      </widget>
+      <widget class="QStackedWidget" name="main_carousel">
+       <property name="geometry">
+        <rect>
+         <x>910</x>
+         <y>40</y>
+         <width>291</width>
+         <height>661</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QStackedWidget QWidget {
+    background-color: #fff;
+    border-radius: 30px;
+}
+</string>
+       </property>
+       <property name="lineWidth">
+        <number>0</number>
+       </property>
+       <property name="currentIndex">
+        <number>1</number>
+       </property>
+       <widget class="QWidget" name="carousel1">
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <widget class="QLabel" name="carousel_image1">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>291</width>
+           <height>661</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>26</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Carousel 1</string>
+         </property>
+         <property name="scaledContents">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="carousel2">
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <widget class="QLabel" name="carousel_image2">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>291</width>
+           <height>661</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>26</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Carousel 2</string>
+         </property>
+         <property name="scaledContents">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="carousel3">
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <widget class="QLabel" name="carousel_image3">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>291</width>
+           <height>661</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>26</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Carousel 3</string>
+         </property>
+         <property name="scaledContents">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+      <widget class="QPushButton" name="main_page1Btn">
+       <property name="geometry">
+        <rect>
+         <x>1020</x>
+         <y>710</y>
+         <width>21</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    background-color: white;
+    color: black;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+QPushButton:hover {
+    background-color: #e0e0e0;  /* light gray */
+}
+
+QPushButton:pressed {
+    background-color: #d5d5d5;
+    padding-top: 8px;  /* simulate press-in */
+    padding-bottom: 7px;
+    box-shadow: inset 0px 2px 4px rgba(255, 255, 255, 0.4); /* lighter shadow */
+}
+</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="main_page2Btn">
+       <property name="geometry">
+        <rect>
+         <x>1060</x>
+         <y>710</y>
+         <width>21</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    background-color: 0f151f;
+    color: black;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+QPushButton:hover {
+    background-color: #e0e0e0;  /* light gray */
+}
+
+QPushButton:pressed {
+    background-color: #d5d5d5;
+    padding-top: 8px;  /* simulate press-in */
+    padding-bottom: 7px;
+    box-shadow: inset 0px 2px 4px rgba(255, 255, 255, 0.4); /* lighter shadow */
+}
+</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="main_page3Btn">
+       <property name="geometry">
+        <rect>
+         <x>1100</x>
+         <y>710</y>
+         <width>21</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    background-color: 0f151f;
+    color: black;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+QPushButton:hover {
+    background-color: #e0e0e0;  /* light gray */
+}
+
+QPushButton:pressed {
+    background-color: #d5d5d5;
+    padding-top: 8px;  /* simulate press-in */
+    padding-bottom: 7px;
+    box-shadow: inset 0px 2px 4px rgba(255, 255, 255, 0.4); /* lighter shadow */
+}
+</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="Page2_01">
+     <widget class="QFrame" name="typesFrame">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>20</y>
+        <width>1241</width>
+        <height>761</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QFrame {
+    background-color: #eaebec;
+	border-radius: 30px;
+}
+</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QLabel" name="label_5">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>20</y>
+         <width>141</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Montserrat</family>
+         <pointsize>18</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    color: #0f151f;
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Coinnect</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_6">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>60</y>
+         <width>231</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Montserrat</family>
+         <pointsize>8</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    color: #0f151f;
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Simplifying your financial transaction!</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="main_timeLabel_2">
+       <property name="geometry">
+        <rect>
+         <x>1090</x>
+         <y>47</y>
+         <width>81</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Montserrat</family>
+         <pointsize>11</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="layoutDirection">
+        <enum>Qt::LeftToRight</enum>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    color: #0f151f;  /* or just #fff */
+	 qproperty-alignment: 'AlignLeft';
+
+}
+</string>
+       </property>
+       <property name="text">
+        <string>1:00PM</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="main_DateLabel_2">
+       <property name="geometry">
+        <rect>
+         <x>910</x>
+         <y>50</y>
+         <width>161</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Montserrat</family>
+         <pointsize>9</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    color: #0f151f;  /* or just #fff */
+	 qproperty-alignment: 'AlignRight';
+
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Monday | 12.07.2025</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="main_logo_2">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>35</y>
+         <width>40</width>
+         <height>40</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>C:/Users/Asus Tuf/Documents/dondon my documents/Research/Coinnect UI/2 Icons/Coinnect Logo.png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_7">
+       <property name="geometry">
+        <rect>
+         <x>420</x>
+         <y>170</y>
+         <width>441</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Montserrat</family>
+         <pointsize>20</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    color: #0f151f;
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Select Type of Transaction</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_8">
+       <property name="geometry">
+        <rect>
+         <x>420</x>
+         <y>149</y>
+         <width>81</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Montserrat</family>
+         <pointsize>18</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    color: #0f151f;
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Hello!</string>
+       </property>
+      </widget>
+      <widget class="QToolButton" name="type_foreignBtn">
+       <property name="geometry">
+        <rect>
+         <x>210</x>
+         <y>280</y>
+         <width>231</width>
+         <height>381</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Montserrat</family>
+         <pointsize>16</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QToolButton {
+    background-color: #DB0642;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 35px;
+    text-align: center;
+}
+
+QToolButton:hover {
+    background-color: #F91052;  /* light gray */
+}
+
+QToolButton:pressed {
+    background-color: #B30536;
+    padding-top: 38px;  /* simulate press-in */
+    padding-bottom: 40px;
+ 
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Foreign
+Exchange</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>C:/Users/Asus Tuf/Documents/dondon my documents/Research/Coinnect UI/2 Icons/conversion.png</normaloff>C:/Users/Asus Tuf/Documents/dondon my documents/Research/Coinnect UI/2 Icons/conversion.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>200</width>
+         <height>200</height>
+        </size>
+       </property>
+       <property name="checkable">
+        <bool>false</bool>
+       </property>
+       <property name="popupMode">
+        <enum>QToolButton::InstantPopup</enum>
+       </property>
+       <property name="toolButtonStyle">
+        <enum>Qt::ToolButtonTextUnderIcon</enum>
+       </property>
+      </widget>
+      <widget class="QToolButton" name="type_currencyBtn">
+       <property name="geometry">
+        <rect>
+         <x>510</x>
+         <y>280</y>
+         <width>231</width>
+         <height>381</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Montserrat</family>
+         <pointsize>16</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QToolButton {
+    background-color: #ff8731;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 35px;
+    text-align: center;
+}
+
+QToolButton:hover {
+    background-color: #FFA05C;  /* light gray */
+}
+
+QToolButton:pressed {
+    background-color: #F56600;
+    padding-top: 38px;  /* simulate press-in */
+    padding-bottom: 40px;
+ 
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Coin and Bill
+Converter</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>C:/Users/Asus Tuf/Documents/dondon my documents/Research/Coinnect UI/2 Icons/currency exchange3.png</normaloff>C:/Users/Asus Tuf/Documents/dondon my documents/Research/Coinnect UI/2 Icons/currency exchange3.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>200</width>
+         <height>200</height>
+        </size>
+       </property>
+       <property name="checkable">
+        <bool>false</bool>
+       </property>
+       <property name="popupMode">
+        <enum>QToolButton::InstantPopup</enum>
+       </property>
+       <property name="toolButtonStyle">
+        <enum>Qt::ToolButtonTextUnderIcon</enum>
+       </property>
+      </widget>
+      <widget class="QToolButton" name="type_ewalletBtn">
+       <property name="geometry">
+        <rect>
+         <x>800</x>
+         <y>280</y>
+         <width>231</width>
+         <height>381</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Montserrat</family>
+         <pointsize>16</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QToolButton {
+    background-color: #0e51c1;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 40px;
+    text-align: center;
+}
+
+QToolButton:hover {
+    background-color: #1B69EE;  /* light gray */
+}
+
+QToolButton:pressed {
+    background-color: #0D47AB;
+    padding-top: 43px;  /* simulate press-in */
+    padding-bottom: 45px;
+ 
+}
+</string>
+       </property>
+       <property name="text">
+        <string>E-Wallet</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>C:/Users/Asus Tuf/Documents/dondon my documents/Research/Coinnect UI/2 Icons/ewallet.png</normaloff>C:/Users/Asus Tuf/Documents/dondon my documents/Research/Coinnect UI/2 Icons/ewallet.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>200</width>
+         <height>200</height>
+        </size>
+       </property>
+       <property name="checkable">
+        <bool>false</bool>
+       </property>
+       <property name="popupMode">
+        <enum>QToolButton::InstantPopup</enum>
+       </property>
+       <property name="toolButtonStyle">
+        <enum>Qt::ToolButtonTextUnderIcon</enum>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="type_backBtn">
+       <property name="geometry">
+        <rect>
+         <x>1180</x>
+         <y>40</y>
+         <width>21</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Montserrat</family>
+         <pointsize>12</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    background-color: #eaebec;
+    border-radius: 30px;
+}
+
+
+QPushButton:pressed {
+    padding-top: 8px;  /* simulate press-in */
+    padding-bottom: 7px;
+    box-shadow: inset 0px 2px 4px rgba(255, 255, 255, 0.4); /* lighter shadow */
+}
+</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>C:/Users/Asus Tuf/Downloads/back.png</normaloff>C:/Users/Asus Tuf/Downloads/back.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>20</width>
+         <height>20</height>
+        </size>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="CB_Service_02">
+     <widget class="QFrame" name="serviceFrame">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>20</y>
+        <width>1241</width>
+        <height>761</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QFrame {
+    background-color: #eaebec;
+	border-radius: 30px;
+}
+</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QLabel" name="label_9">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>20</y>
+         <width>141</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Montserrat</family>
+         <pointsize>18</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    color: #0f151f;
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Coinnect</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_10">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>60</y>
+         <width>231</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Montserrat</family>
+         <pointsize>8</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    color: #0f151f;
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Simplifying your financial transaction!</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="main_timeLabel_3">
+       <property name="geometry">
+        <rect>
+         <x>1090</x>
+         <y>47</y>
+         <width>81</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Montserrat</family>
+         <pointsize>11</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="layoutDirection">
+        <enum>Qt::LeftToRight</enum>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    color: #0f151f;  /* or just #fff */
+	 qproperty-alignment: 'AlignLeft';
+
+}
+</string>
+       </property>
+       <property name="text">
+        <string>1:00PM</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="main_DateLabel_3">
+       <property name="geometry">
+        <rect>
+         <x>910</x>
+         <y>50</y>
+         <width>161</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Montserrat</family>
+         <pointsize>9</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    color: #0f151f;  /* or just #fff */
+	 qproperty-alignment: 'AlignRight';
+
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Monday | 12.07.2025</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="main_logo_3">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>35</y>
+         <width>40</width>
+         <height>40</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>C:/Users/Asus Tuf/Documents/dondon my documents/Research/Coinnect UI/2 Icons/Coinnect Logo.png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_11">
+       <property name="geometry">
+        <rect>
+         <x>460</x>
+         <y>170</y>
+         <width>361</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Montserrat</family>
+         <pointsize>20</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    color: #0f151f;
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Select Type of Service</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_12">
+       <property name="geometry">
+        <rect>
+         <x>490</x>
+         <y>150</y>
+         <width>301</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Montserrat</family>
+         <pointsize>18</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    color: #ff8731;
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Coin and Bill Coverter</string>
+       </property>
+      </widget>
+      <widget class="QToolButton" name="service_b2cBtn">
+       <property name="geometry">
+        <rect>
+         <x>510</x>
+         <y>280</y>
+         <width>231</width>
+         <height>381</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Montserrat</family>
+         <pointsize>18</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QToolButton {
+    background-color: #ff8731;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 20px;
+	padding-top: 50px;
+    text-align: center;
+}
+
+QToolButton:hover {
+    background-color: #FFA05C;  /* light gray */
+}
+
+QToolButton:pressed {
+    background-color: #F56600;
+    padding-top: 53px;  /* simulate press-in */
+    padding-bottom: 25px;
+ 
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Bill to Coin</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>C:/Users/Asus Tuf/Documents/dondon my documents/Research/Coinnect UI/2 Icons/1bill to coinn.png</normaloff>C:/Users/Asus Tuf/Documents/dondon my documents/Research/Coinnect UI/2 Icons/1bill to coinn.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>200</width>
+         <height>200</height>
+        </size>
+       </property>
+       <property name="checkable">
+        <bool>false</bool>
+       </property>
+       <property name="popupMode">
+        <enum>QToolButton::InstantPopup</enum>
+       </property>
+       <property name="toolButtonStyle">
+        <enum>Qt::ToolButtonTextUnderIcon</enum>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="service_backBtn">
+       <property name="geometry">
+        <rect>
+         <x>1180</x>
+         <y>40</y>
+         <width>21</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Montserrat</family>
+         <pointsize>12</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    background-color: #eaebec;
+    border-radius: 30px;
+}
+
+
+QPushButton:pressed {
+    padding-top: 8px;  /* simulate press-in */
+    padding-bottom: 7px;
+    box-shadow: inset 0px 2px 4px rgba(255, 255, 255, 0.4); /* lighter shadow */
+}
+</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>C:/Users/Asus Tuf/Downloads/back.png</normaloff>C:/Users/Asus Tuf/Downloads/back.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>20</width>
+         <height>20</height>
+        </size>
+       </property>
+      </widget>
+      <widget class="QToolButton" name="service_b2bBtn">
+       <property name="geometry">
+        <rect>
+         <x>800</x>
+         <y>280</y>
+         <width>231</width>
+         <height>381</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Montserrat</family>
+         <pointsize>18</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QToolButton {
+    background-color: #ff8731;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 20px;
+	padding-top: 50px;
+    text-align: center;
+}
+
+QToolButton:hover {
+    background-color: #FFA05C;  /* light gray */
+}
+
+QToolButton:pressed {
+    background-color: #F56600;
+    padding-top: 53px;  /* simulate press-in */
+    padding-bottom: 25px;
+ 
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Bill to Bill</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>C:/Users/Asus Tuf/Documents/dondon my documents/Research/Coinnect UI/2 Icons/3bill to bill.png</normaloff>C:/Users/Asus Tuf/Documents/dondon my documents/Research/Coinnect UI/2 Icons/3bill to bill.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>200</width>
+         <height>200</height>
+        </size>
+       </property>
+       <property name="checkable">
+        <bool>false</bool>
+       </property>
+       <property name="popupMode">
+        <enum>QToolButton::InstantPopup</enum>
+       </property>
+       <property name="toolButtonStyle">
+        <enum>Qt::ToolButtonTextUnderIcon</enum>
+       </property>
+      </widget>
+      <widget class="QToolButton" name="service_c2bBtn">
+       <property name="geometry">
+        <rect>
+         <x>210</x>
+         <y>280</y>
+         <width>231</width>
+         <height>381</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Montserrat</family>
+         <pointsize>18</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QToolButton {
+    background-color: #ff8731;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 20px;
+	padding-top: 50px;
+    text-align: center;
+}
+
+QToolButton:hover {
+    background-color: #FFA05C;  /* light gray */
+}
+
+QToolButton:pressed {
+    background-color: #F56600;
+    padding-top: 53px;  /* simulate press-in */
+    padding-bottom: 25px;
+ 
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Coin to Bill</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>C:/Users/Asus Tuf/Documents/dondon my documents/Research/Coinnect UI/2 Icons/2coin to bill.png</normaloff>C:/Users/Asus Tuf/Documents/dondon my documents/Research/Coinnect UI/2 Icons/2coin to bill.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>200</width>
+         <height>200</height>
+        </size>
+       </property>
+       <property name="checkable">
+        <bool>false</bool>
+       </property>
+       <property name="popupMode">
+        <enum>QToolButton::InstantPopup</enum>
+       </property>
+       <property name="toolButtonStyle">
+        <enum>Qt::ToolButtonTextUnderIcon</enum>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="CB_SelectTrans_03">
+     <widget class="QFrame" name="transactionFrame">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>20</y>
+        <width>1241</width>
+        <height>761</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>9</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QFrame {
+    background-color: #eaebec;
+	border-radius: 30px;
+}
+</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QLabel" name="label_17">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>20</y>
+         <width>141</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Montserrat</family>
+         <pointsize>18</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    color: #0f151f;
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Coinnect</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_18">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>60</y>
+         <width>231</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Montserrat</family>
+         <pointsize>8</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    color: #0f151f;
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Simplifying your financial transaction!</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="main_logo_5">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>35</y>
+         <width>40</width>
+         <height>40</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>C:/Users/Asus Tuf/Documents/dondon my documents/Research/Coinnect UI/2 Icons/Coinnect Logo.png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_19">
+       <property name="geometry">
+        <rect>
+         <x>450</x>
+         <y>120</y>
+         <width>381</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Montserrat</family>
+         <pointsize>20</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    color: #ff8731;
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Select Your Transaction</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="converter_select_backBtn">
+       <property name="geometry">
+        <rect>
+         <x>1180</x>
+         <y>40</y>
+         <width>21</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Montserrat</family>
+         <pointsize>12</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    background-color: #eaebec;
+    border-radius: 30px;
+}
+
+
+QPushButton:pressed {
+    padding-top: 8px;  /* simulate press-in */
+    padding-bottom: 7px;
+    box-shadow: inset 0px 2px 4px rgba(255, 255, 255, 0.4); /* lighter shadow */
+}
+</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>C:/Users/Asus Tuf/Downloads/back.png</normaloff>C:/Users/Asus Tuf/Downloads/back.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>20</width>
+         <height>20</height>
+        </size>
+       </property>
+      </widget>
+      <widget class="QToolButton" name="converter_service_b2bBtn1">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>240</y>
+         <width>451</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Montserrat</family>
+         <pointsize>24</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>ArrowCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QToolButton {
+    background-color: #ff8731;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    padding: 20px;
+	padding-top: 10px;
+    text-align: center;
+}
+</string>
+       </property>
+       <property name="text">
+        <string>   P20 - P40           P3</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>200</width>
+         <height>200</height>
+        </size>
+       </property>
+       <property name="checkable">
+        <bool>false</bool>
+       </property>
+       <property name="popupMode">
+        <enum>QToolButton::InstantPopup</enum>
+       </property>
+       <property name="toolButtonStyle">
+        <enum>Qt::ToolButtonTextUnderIcon</enum>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_21">
+       <property name="geometry">
+        <rect>
+         <x>900</x>
+         <y>20</y>
+         <width>201</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Montserrat</family>
+         <pointsize>12</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    color: #ff8731;
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Coin and Bill Coverter</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_22">
+       <property name="geometry">
+        <rect>
+         <x>810</x>
+         <y>40</y>
+         <width>291</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Montserrat</family>
+         <pointsize>16</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    color: #0F151F;
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Coin-To-Bill Conversion</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="main_logo_6">
+       <property name="geometry">
+        <rect>
+         <x>1110</x>
+         <y>30</y>
+         <width>50</width>
+         <height>50</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>C:/Users/Asus Tuf/Documents/dondon my documents/Research/Coinnect UI/2 Icons/Black_coin to bill.png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="Line" name="line">
+       <property name="geometry">
+        <rect>
+         <x>460</x>
+         <y>240</y>
+         <width>1</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">Line {
+    background-color: #FFB885;
+
+}
+</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+      <widget class="QToolButton" name="converter_service_b2bBtn2">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>320</y>
+         <width>451</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Montserrat</family>
+         <pointsize>24</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>ArrowCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QToolButton {
+    background-color: #ff8731;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    padding: 20px;
+	padding-top: 10px;
+    text-align: center;
+}</string>
+       </property>
+       <property name="text">
+        <string>   P50 - P70           P5</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>200</width>
+         <height>200</height>
+        </size>
+       </property>
+       <property name="checkable">
+        <bool>false</bool>
+       </property>
+       <property name="popupMode">
+        <enum>QToolButton::InstantPopup</enum>
+       </property>
+       <property name="toolButtonStyle">
+        <enum>Qt::ToolButtonTextUnderIcon</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_2">
+       <property name="geometry">
+        <rect>
+         <x>460</x>
+         <y>320</y>
+         <width>1</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">Line {
+    background-color: #FFB885;
+
+}
+</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+      <widget class="QToolButton" name="converter_service_b2bBtn3">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>400</y>
+         <width>451</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Montserrat</family>
+         <pointsize>24</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>ArrowCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QToolButton {
+    background-color: #ff8731;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    padding: 20px;
+	padding-top: 10px;
+    text-align: center;
+}</string>
+       </property>
+       <property name="text">
+        <string>  P80 - P100          P8</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>200</width>
+         <height>200</height>
+        </size>
+       </property>
+       <property name="checkable">
+        <bool>false</bool>
+       </property>
+       <property name="popupMode">
+        <enum>QToolButton::InstantPopup</enum>
+       </property>
+       <property name="toolButtonStyle">
+        <enum>Qt::ToolButtonTextUnderIcon</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_3">
+       <property name="geometry">
+        <rect>
+         <x>460</x>
+         <y>400</y>
+         <width>1</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">Line {
+    background-color: #FFB885;
+
+}
+</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+      <widget class="QToolButton" name="converter_service_b2bBtn4">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>480</y>
+         <width>451</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Montserrat</family>
+         <pointsize>24</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>ArrowCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QToolButton {
+    background-color: #ff8731;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    padding: 20px;
+	padding-top: 10px;
+    text-align: center;
+}</string>
+       </property>
+       <property name="text">
+        <string>   P110 - P150         P10</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>200</width>
+         <height>200</height>
+        </size>
+       </property>
+       <property name="checkable">
+        <bool>false</bool>
+       </property>
+       <property name="popupMode">
+        <enum>QToolButton::InstantPopup</enum>
+       </property>
+       <property name="toolButtonStyle">
+        <enum>Qt::ToolButtonTextUnderIcon</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_4">
+       <property name="geometry">
+        <rect>
+         <x>460</x>
+         <y>480</y>
+         <width>1</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">Line {
+    background-color: #FFB885;
+
+}
+</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_5">
+       <property name="geometry">
+        <rect>
+         <x>460</x>
+         <y>560</y>
+         <width>1</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">Line {
+    background-color: #FFB885;
+
+}
+</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+      <widget class="QToolButton" name="converter_service_b2bBtn5">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>560</y>
+         <width>451</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Montserrat</family>
+         <pointsize>24</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>ArrowCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QToolButton {
+    background-color: #ff8731;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    padding: 20px;
+	padding-top: 10px;
+    text-align: center;
+}</string>
+       </property>
+       <property name="text">
+        <string>  P160 - P200        P15</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>200</width>
+         <height>200</height>
+        </size>
+       </property>
+       <property name="checkable">
+        <bool>false</bool>
+       </property>
+       <property name="popupMode">
+        <enum>QToolButton::InstantPopup</enum>
+       </property>
+       <property name="toolButtonStyle">
+        <enum>Qt::ToolButtonTextUnderIcon</enum>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_24">
+       <property name="geometry">
+        <rect>
+         <x>270</x>
+         <y>210</y>
+         <width>71</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Montserrat</family>
+         <pointsize>10</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    color: #0F151F;
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Amount</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="main_logo_7">
+       <property name="geometry">
+        <rect>
+         <x>630</x>
+         <y>250</y>
+         <width>45</width>
+         <height>45</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>C:/Users/Asus Tuf/Documents/dondon my documents/Research/Coinnect UI/2 Icons/arrow_orange.png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="main_logo_8">
+       <property name="geometry">
+        <rect>
+         <x>630</x>
+         <y>330</y>
+         <width>45</width>
+         <height>45</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>C:/Users/Asus Tuf/Documents/dondon my documents/Research/Coinnect UI/2 Icons/arrow_orange.png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="main_logo_9">
+       <property name="geometry">
+        <rect>
+         <x>630</x>
+         <y>490</y>
+         <width>45</width>
+         <height>45</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>C:/Users/Asus Tuf/Documents/dondon my documents/Research/Coinnect UI/2 Icons/arrow_orange.png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="main_logo_10">
+       <property name="geometry">
+        <rect>
+         <x>630</x>
+         <y>410</y>
+         <width>45</width>
+         <height>45</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>C:/Users/Asus Tuf/Documents/dondon my documents/Research/Coinnect UI/2 Icons/arrow_orange.png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="main_logo_11">
+       <property name="geometry">
+        <rect>
+         <x>630</x>
+         <y>570</y>
+         <width>45</width>
+         <height>45</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>C:/Users/Asus Tuf/Documents/dondon my documents/Research/Coinnect UI/2 Icons/arrow_orange.png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QToolButton" name="converter_trans_b2bBtn20">
+       <property name="geometry">
+        <rect>
+         <x>730</x>
+         <y>240</y>
+         <width>111</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Montserrat</family>
+         <pointsize>18</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QToolButton {
+    background-color: transparent;
+    color: #ff8731;
+    border: 2px solid #ff8731;
+    border-radius: 15px;
+    padding: 20px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+
+QToolButton:hover {
+    background-color: #FFC499;  /* light gray */
+	border: 2px solid #FFC499;
+}
+
+QToolButton:pressed {
+    background-color: #F56600;
+	color: white;
+    padding-top: 15px;  /* simulate press-in */
+    padding-bottom: 20px;
+ 
+}
+</string>
+       </property>
+       <property name="text">
+        <string>20</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>200</width>
+         <height>200</height>
+        </size>
+       </property>
+       <property name="checkable">
+        <bool>false</bool>
+       </property>
+       <property name="popupMode">
+        <enum>QToolButton::InstantPopup</enum>
+       </property>
+       <property name="toolButtonStyle">
+        <enum>Qt::ToolButtonTextUnderIcon</enum>
+       </property>
+      </widget>
+      <widget class="QToolButton" name="converter_trans_b2bBtn40">
+       <property name="geometry">
+        <rect>
+         <x>870</x>
+         <y>240</y>
+         <width>111</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Montserrat</family>
+         <pointsize>18</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QToolButton {
+    background-color: transparent;
+    color: #ff8731;
+    border: 2px solid #ff8731;
+    border-radius: 15px;
+    padding: 20px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+
+QToolButton:hover {
+    background-color: #FFC499;  /* light gray */
+	border: 2px solid #FFC499;
+}
+
+QToolButton:pressed {
+    background-color: #F56600;
+	color: white;
+    padding-top: 15px;  /* simulate press-in */
+    padding-bottom: 20px;
+ 
+}
+</string>
+       </property>
+       <property name="text">
+        <string>40</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>200</width>
+         <height>200</height>
+        </size>
+       </property>
+       <property name="checkable">
+        <bool>false</bool>
+       </property>
+       <property name="popupMode">
+        <enum>QToolButton::InstantPopup</enum>
+       </property>
+       <property name="toolButtonStyle">
+        <enum>Qt::ToolButtonTextUnderIcon</enum>
+       </property>
+      </widget>
+      <widget class="QToolButton" name="converter_trans_b2bBtn60">
+       <property name="geometry">
+        <rect>
+         <x>870</x>
+         <y>320</y>
+         <width>111</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Montserrat</family>
+         <pointsize>18</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QToolButton {
+    background-color: transparent;
+    color: #ff8731;
+    border: 2px solid #ff8731;
+    border-radius: 15px;
+    padding: 20px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+QToolButton:hover {
+    background-color: #FFC499;  /* light gray */
+	border: 2px solid #FFC499;
+}
+
+QToolButton:pressed {
+    background-color: #F56600;
+	color: white;
+    padding-top: 15px;  /* simulate press-in */
+    padding-bottom: 20px;
+ 
+}</string>
+       </property>
+       <property name="text">
+        <string>60</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>200</width>
+         <height>200</height>
+        </size>
+       </property>
+       <property name="checkable">
+        <bool>false</bool>
+       </property>
+       <property name="popupMode">
+        <enum>QToolButton::InstantPopup</enum>
+       </property>
+       <property name="toolButtonStyle">
+        <enum>Qt::ToolButtonTextUnderIcon</enum>
+       </property>
+      </widget>
+      <widget class="QToolButton" name="converter_trans_b2bBtn50">
+       <property name="geometry">
+        <rect>
+         <x>730</x>
+         <y>320</y>
+         <width>111</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Montserrat</family>
+         <pointsize>18</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QToolButton {
+    background-color: transparent;
+    color: #ff8731;
+    border: 2px solid #ff8731;
+    border-radius: 15px;
+    padding: 20px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+
+QToolButton:hover {
+    background-color: #FFC499;  /* light gray */
+	border: 2px solid #FFC499;
+}
+
+QToolButton:pressed {
+    background-color: #F56600;
+	color: white;
+    padding-top: 15px;  /* simulate press-in */
+    padding-bottom: 20px;
+ 
+}
+</string>
+       </property>
+       <property name="text">
+        <string>50</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>200</width>
+         <height>200</height>
+        </size>
+       </property>
+       <property name="checkable">
+        <bool>false</bool>
+       </property>
+       <property name="popupMode">
+        <enum>QToolButton::InstantPopup</enum>
+       </property>
+       <property name="toolButtonStyle">
+        <enum>Qt::ToolButtonTextUnderIcon</enum>
+       </property>
+      </widget>
+      <widget class="QToolButton" name="converter_trans_b2bBtn70">
+       <property name="geometry">
+        <rect>
+         <x>1010</x>
+         <y>320</y>
+         <width>111</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Montserrat</family>
+         <pointsize>18</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QToolButton {
+    background-color: transparent;
+    color: #ff8731;
+    border: 2px solid #ff8731;
+    border-radius: 15px;
+    padding: 20px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+
+QToolButton:hover {
+    background-color: #FFC499;  /* light gray */
+	border: 2px solid #FFC499;
+}
+
+QToolButton:pressed {
+    background-color: #F56600;
+	color: white;
+    padding-top: 15px;  /* simulate press-in */
+    padding-bottom: 20px;
+ 
+}
+</string>
+       </property>
+       <property name="text">
+        <string>70</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>200</width>
+         <height>200</height>
+        </size>
+       </property>
+       <property name="checkable">
+        <bool>false</bool>
+       </property>
+       <property name="popupMode">
+        <enum>QToolButton::InstantPopup</enum>
+       </property>
+       <property name="toolButtonStyle">
+        <enum>Qt::ToolButtonTextUnderIcon</enum>
+       </property>
+      </widget>
+      <widget class="QToolButton" name="converter_trans_b2bBtn90">
+       <property name="geometry">
+        <rect>
+         <x>870</x>
+         <y>400</y>
+         <width>111</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Montserrat</family>
+         <pointsize>18</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QToolButton {
+    background-color: transparent;
+    color: #ff8731;
+    border: 2px solid #ff8731;
+    border-radius: 15px;
+    padding: 20px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+
+QToolButton:hover {
+    background-color: #FFC499;  /* light gray */
+	border: 2px solid #FFC499;
+}
+
+QToolButton:pressed {
+    background-color: #F56600;
+	color: white;
+    padding-top: 15px;  /* simulate press-in */
+    padding-bottom: 20px;
+ 
+}</string>
+       </property>
+       <property name="text">
+        <string>90</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>200</width>
+         <height>200</height>
+        </size>
+       </property>
+       <property name="checkable">
+        <bool>false</bool>
+       </property>
+       <property name="popupMode">
+        <enum>QToolButton::InstantPopup</enum>
+       </property>
+       <property name="toolButtonStyle">
+        <enum>Qt::ToolButtonTextUnderIcon</enum>
+       </property>
+      </widget>
+      <widget class="QToolButton" name="converter_trans_b2bBtn80">
+       <property name="geometry">
+        <rect>
+         <x>730</x>
+         <y>400</y>
+         <width>111</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Montserrat</family>
+         <pointsize>18</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QToolButton {
+    background-color: transparent;
+    color: #ff8731;
+    border: 2px solid #ff8731;
+    border-radius: 15px;
+    padding: 20px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+
+QToolButton:hover {
+    background-color: #FFC499;  /* light gray */
+	border: 2px solid #FFC499;
+}
+
+QToolButton:pressed {
+    background-color: #F56600;
+	color: white;
+    padding-top: 15px;  /* simulate press-in */
+    padding-bottom: 20px;
+ 
+}
+</string>
+       </property>
+       <property name="text">
+        <string>80</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>200</width>
+         <height>200</height>
+        </size>
+       </property>
+       <property name="checkable">
+        <bool>false</bool>
+       </property>
+       <property name="popupMode">
+        <enum>QToolButton::InstantPopup</enum>
+       </property>
+       <property name="toolButtonStyle">
+        <enum>Qt::ToolButtonTextUnderIcon</enum>
+       </property>
+      </widget>
+      <widget class="QToolButton" name="converter_trans_b2bBtn100">
+       <property name="geometry">
+        <rect>
+         <x>1010</x>
+         <y>400</y>
+         <width>111</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Montserrat</family>
+         <pointsize>18</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QToolButton {
+    background-color: transparent;
+    color: #ff8731;
+    border: 2px solid #ff8731;
+    border-radius: 15px;
+    padding: 20px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+
+QToolButton:hover {
+    background-color: #FFC499;  /* light gray */
+	border: 2px solid #FFC499;
+}
+
+QToolButton:pressed {
+    background-color: #F56600;
+	color: white;
+    padding-top: 15px;  /* simulate press-in */
+    padding-bottom: 20px;
+ 
+}
+</string>
+       </property>
+       <property name="text">
+        <string>100</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>200</width>
+         <height>200</height>
+        </size>
+       </property>
+       <property name="checkable">
+        <bool>false</bool>
+       </property>
+       <property name="popupMode">
+        <enum>QToolButton::InstantPopup</enum>
+       </property>
+       <property name="toolButtonStyle">
+        <enum>Qt::ToolButtonTextUnderIcon</enum>
+       </property>
+      </widget>
+      <widget class="QToolButton" name="converter_trans_b2bBtn110">
+       <property name="geometry">
+        <rect>
+         <x>730</x>
+         <y>480</y>
+         <width>111</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Montserrat</family>
+         <pointsize>18</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QToolButton {
+    background-color: transparent;
+    color: #ff8731;
+    border: 2px solid #ff8731;
+    border-radius: 15px;
+    padding: 20px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+
+QToolButton:hover {
+    background-color: #FFC499;  /* light gray */
+	border: 2px solid #FFC499;
+}
+
+QToolButton:pressed {
+    background-color: #F56600;
+	color: white;
+    padding-top: 15px;  /* simulate press-in */
+    padding-bottom: 20px;
+ 
+}</string>
+       </property>
+       <property name="text">
+        <string>110</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>200</width>
+         <height>200</height>
+        </size>
+       </property>
+       <property name="checkable">
+        <bool>false</bool>
+       </property>
+       <property name="popupMode">
+        <enum>QToolButton::InstantPopup</enum>
+       </property>
+       <property name="toolButtonStyle">
+        <enum>Qt::ToolButtonTextUnderIcon</enum>
+       </property>
+      </widget>
+      <widget class="QToolButton" name="converter_trans_b2bBtn150">
+       <property name="geometry">
+        <rect>
+         <x>1010</x>
+         <y>480</y>
+         <width>111</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Montserrat</family>
+         <pointsize>18</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QToolButton {
+    background-color: transparent;
+    color: #ff8731;
+    border: 2px solid #ff8731;
+    border-radius: 15px;
+    padding: 20px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+
+QToolButton:hover {
+    background-color: #FFC499;  /* light gray */
+	border: 2px solid #FFC499;
+}
+
+QToolButton:pressed {
+    background-color: #F56600;
+	color: white;
+    padding-top: 15px;  /* simulate press-in */
+    padding-bottom: 20px;
+ 
+}
+</string>
+       </property>
+       <property name="text">
+        <string>150</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>200</width>
+         <height>200</height>
+        </size>
+       </property>
+       <property name="checkable">
+        <bool>false</bool>
+       </property>
+       <property name="popupMode">
+        <enum>QToolButton::InstantPopup</enum>
+       </property>
+       <property name="toolButtonStyle">
+        <enum>Qt::ToolButtonTextUnderIcon</enum>
+       </property>
+      </widget>
+      <widget class="QToolButton" name="converter_trans_b2bBtn120">
+       <property name="geometry">
+        <rect>
+         <x>870</x>
+         <y>480</y>
+         <width>111</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Montserrat</family>
+         <pointsize>18</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QToolButton {
+    background-color: transparent;
+    color: #ff8731;
+    border: 2px solid #ff8731;
+    border-radius: 15px;
+    padding: 20px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+
+QToolButton:hover {
+    background-color: #FFC499;  /* light gray */
+	border: 2px solid #FFC499;
+}
+
+QToolButton:pressed {
+    background-color: #F56600;
+	color: white;
+    padding-top: 15px;  /* simulate press-in */
+    padding-bottom: 20px;
+ 
+}
+</string>
+       </property>
+       <property name="text">
+        <string>120</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>200</width>
+         <height>200</height>
+        </size>
+       </property>
+       <property name="checkable">
+        <bool>false</bool>
+       </property>
+       <property name="popupMode">
+        <enum>QToolButton::InstantPopup</enum>
+       </property>
+       <property name="toolButtonStyle">
+        <enum>Qt::ToolButtonTextUnderIcon</enum>
+       </property>
+      </widget>
+      <widget class="QToolButton" name="converter_trans_b2bBtn160">
+       <property name="geometry">
+        <rect>
+         <x>730</x>
+         <y>560</y>
+         <width>111</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Montserrat</family>
+         <pointsize>18</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QToolButton {
+    background-color: transparent;
+    color: #ff8731;
+    border: 2px solid #ff8731;
+    border-radius: 15px;
+    padding: 20px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+QToolButton:hover {
+    background-color: #FFC499;  /* light gray */
+	border: 2px solid #FFC499;
+}
+
+QToolButton:pressed {
+    background-color: #F56600;
+	color: white;
+    padding-top: 15px;  /* simulate press-in */
+    padding-bottom: 20px;
+ 
+}</string>
+       </property>
+       <property name="text">
+        <string>160</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>200</width>
+         <height>200</height>
+        </size>
+       </property>
+       <property name="checkable">
+        <bool>false</bool>
+       </property>
+       <property name="popupMode">
+        <enum>QToolButton::InstantPopup</enum>
+       </property>
+       <property name="toolButtonStyle">
+        <enum>Qt::ToolButtonTextUnderIcon</enum>
+       </property>
+      </widget>
+      <widget class="QToolButton" name="converter_trans_b2bBtn200">
+       <property name="geometry">
+        <rect>
+         <x>1010</x>
+         <y>560</y>
+         <width>111</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Montserrat</family>
+         <pointsize>18</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QToolButton {
+    background-color: transparent;
+    color: #ff8731;
+    border: 2px solid #ff8731;
+    border-radius: 15px;
+    padding: 20px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+
+QToolButton:hover {
+    background-color: #FFC499;  /* light gray */
+	border: 2px solid #FFC499;
+}
+
+QToolButton:pressed {
+    background-color: #F56600;
+	color: white;
+    padding-top: 15px;  /* simulate press-in */
+    padding-bottom: 20px;
+ 
+}</string>
+       </property>
+       <property name="text">
+        <string>200</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>200</width>
+         <height>200</height>
+        </size>
+       </property>
+       <property name="checkable">
+        <bool>false</bool>
+       </property>
+       <property name="popupMode">
+        <enum>QToolButton::InstantPopup</enum>
+       </property>
+       <property name="toolButtonStyle">
+        <enum>Qt::ToolButtonTextUnderIcon</enum>
+       </property>
+      </widget>
+      <widget class="QToolButton" name="converter_trans_b2bBtn170">
+       <property name="geometry">
+        <rect>
+         <x>870</x>
+         <y>560</y>
+         <width>111</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Montserrat</family>
+         <pointsize>18</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QToolButton {
+    background-color: transparent;
+    color: #ff8731;
+    border: 2px solid #ff8731;
+    border-radius: 15px;
+    padding: 20px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+
+QToolButton:hover {
+    background-color: #FFC499;  /* light gray */
+	border: 2px solid #FFC499;
+}
+
+QToolButton:pressed {
+    background-color: #F56600;
+	color: white;
+    padding-top: 15px;  /* simulate press-in */
+    padding-bottom: 20px;
+ 
+}</string>
+       </property>
+       <property name="text">
+        <string>170</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>200</width>
+         <height>200</height>
+        </size>
+       </property>
+       <property name="checkable">
+        <bool>false</bool>
+       </property>
+       <property name="popupMode">
+        <enum>QToolButton::InstantPopup</enum>
+       </property>
+       <property name="toolButtonStyle">
+        <enum>Qt::ToolButtonTextUnderIcon</enum>
+       </property>
+      </widget>
+      <widget class="QToolButton" name="converter_service_proceed">
+       <property name="geometry">
+        <rect>
+         <x>550</x>
+         <y>670</y>
+         <width>191</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Montserrat</family>
+         <pointsize>14</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QToolButton {
+    background-color: #ff8731;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    text-align: center;
+}
+
+QToolButton:hover {
+    background-color: #FFA05C;  /* light gray */
+}
+
+QToolButton:pressed {
+    background-color: #F56600;
+    padding-top: 15px;  /* simulate press-in */
+    padding-bottom: 20px;
+ 
+}
+
+QToolButton:disabled {
+            background-color: #FFB885;
+            color: white;
+            border-radius: 10px;
+            padding: 10px;
+        }
+</string>
+       </property>
+       <property name="text">
+        <string>Proceed</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>200</width>
+         <height>200</height>
+        </size>
+       </property>
+       <property name="checkable">
+        <bool>false</bool>
+       </property>
+       <property name="popupMode">
+        <enum>QToolButton::InstantPopup</enum>
+       </property>
+       <property name="toolButtonStyle">
+        <enum>Qt::ToolButtonTextUnderIcon</enum>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_26">
+       <property name="geometry">
+        <rect>
+         <x>460</x>
+         <y>210</y>
+         <width>131</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Montserrat</family>
+         <pointsize>10</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    color: #0F151F;
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Transaction Fee</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_27">
+       <property name="geometry">
+        <rect>
+         <x>830</x>
+         <y>210</y>
+         <width>191</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Montserrat</family>
+         <pointsize>10</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    color: #0F151F;
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Select Specific Amount</string>
+       </property>
+      </widget>
+      <zorder>converter_service_b2bBtn5</zorder>
+      <zorder>label_17</zorder>
+      <zorder>label_18</zorder>
+      <zorder>main_logo_5</zorder>
+      <zorder>label_19</zorder>
+      <zorder>converter_select_backBtn</zorder>
+      <zorder>converter_service_b2bBtn1</zorder>
+      <zorder>label_22</zorder>
+      <zorder>label_21</zorder>
+      <zorder>main_logo_6</zorder>
+      <zorder>line</zorder>
+      <zorder>converter_service_b2bBtn2</zorder>
+      <zorder>line_2</zorder>
+      <zorder>converter_service_b2bBtn3</zorder>
+      <zorder>line_3</zorder>
+      <zorder>converter_service_b2bBtn4</zorder>
+      <zorder>line_4</zorder>
+      <zorder>line_5</zorder>
+      <zorder>label_24</zorder>
+      <zorder>main_logo_7</zorder>
+      <zorder>main_logo_8</zorder>
+      <zorder>main_logo_9</zorder>
+      <zorder>main_logo_10</zorder>
+      <zorder>main_logo_11</zorder>
+      <zorder>converter_trans_b2bBtn20</zorder>
+      <zorder>converter_trans_b2bBtn40</zorder>
+      <zorder>converter_trans_b2bBtn60</zorder>
+      <zorder>converter_trans_b2bBtn50</zorder>
+      <zorder>converter_trans_b2bBtn70</zorder>
+      <zorder>converter_trans_b2bBtn90</zorder>
+      <zorder>converter_trans_b2bBtn80</zorder>
+      <zorder>converter_trans_b2bBtn100</zorder>
+      <zorder>converter_trans_b2bBtn110</zorder>
+      <zorder>converter_trans_b2bBtn150</zorder>
+      <zorder>converter_trans_b2bBtn120</zorder>
+      <zorder>converter_trans_b2bBtn160</zorder>
+      <zorder>converter_trans_b2bBtn200</zorder>
+      <zorder>converter_trans_b2bBtn170</zorder>
+      <zorder>converter_service_proceed</zorder>
+      <zorder>label_26</zorder>
+      <zorder>label_27</zorder>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="CB_ConfirmationWidget_04">
+     <widget class="QFrame" name="confirmationFrame">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>20</y>
+        <width>1241</width>
+        <height>761</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>9</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QFrame {
+    background-color: #ff8731;
+	border-radius: 30px;
+}
+</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QLabel" name="main_logo_26">
+       <property name="geometry">
+        <rect>
+         <x>470</x>
+         <y>90</y>
+         <width>300</width>
+         <height>300</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>C:/Users/Asus Tuf/Documents/dondon my documents/Research/Coinnect UI/2 Icons/question_white2.png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_46">
+       <property name="geometry">
+        <rect>
+         <x>240</x>
+         <y>450</y>
+         <width>271</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Montserrat</family>
+         <pointsize>18</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    color: white;
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Amount Selected: </string>
+       </property>
+      </widget>
+      <widget class="QToolButton" name="cb_confirm_proceed">
+       <property name="geometry">
+        <rect>
+         <x>650</x>
+         <y>640</y>
+         <width>191</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Montserrat</family>
+         <pointsize>14</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QToolButton {
+    background-color: white;
+    color: #ff8731;
+    border: none;
+    border-radius: 15px;
+    text-align: center;
+}
+
+QToolButton:hover {
+    background-color: #FFC499;  /* light gray */
+	border: 2px solid #FFC499;
+}
+
+QToolButton:pressed {
+    background-color: #F56600;
+	color: white;
+    padding-top: 10px;  /* simulate press-in */
+    padding-bottom: 15px;
+ 
+}
+
+</string>
+       </property>
+       <property name="text">
+        <string>Proceed</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>200</width>
+         <height>200</height>
+        </size>
+       </property>
+       <property name="checkable">
+        <bool>false</bool>
+       </property>
+       <property name="popupMode">
+        <enum>QToolButton::InstantPopup</enum>
+       </property>
+       <property name="toolButtonStyle">
+        <enum>Qt::ToolButtonTextUnderIcon</enum>
+       </property>
+      </widget>
+      <widget class="QLabel" name="cb_confirm_amount">
+       <property name="geometry">
+        <rect>
+         <x>520</x>
+         <y>450</y>
+         <width>101</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Montserrat</family>
+         <pointsize>18</pointsize>
+         <weight>75</weight>
+         <italic>true</italic>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    color: white;
+}
+</string>
+       </property>
+       <property name="text">
+        <string>P200</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_48">
+       <property name="geometry">
+        <rect>
+         <x>620</x>
+         <y>450</y>
+         <width>281</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Montserrat</family>
+         <pointsize>18</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    color: white;
+}
+</string>
+       </property>
+       <property name="text">
+        <string>|   Transaction Fee:</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="cb_confirm_trans">
+       <property name="geometry">
+        <rect>
+         <x>910</x>
+         <y>450</y>
+         <width>101</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Montserrat</family>
+         <pointsize>18</pointsize>
+         <weight>75</weight>
+         <italic>true</italic>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    color: white;
+}
+</string>
+       </property>
+       <property name="text">
+        <string>P3</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_51">
+       <property name="geometry">
+        <rect>
+         <x>490</x>
+         <y>490</y>
+         <width>151</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Montserrat</family>
+         <pointsize>18</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    color: white;
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Total Due:</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="cb_confirm_due">
+       <property name="geometry">
+        <rect>
+         <x>650</x>
+         <y>490</y>
+         <width>101</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Montserrat</family>
+         <pointsize>18</pointsize>
+         <weight>75</weight>
+         <italic>true</italic>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    color: white;
+}
+</string>
+       </property>
+       <property name="text">
+        <string>P215</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_52">
+       <property name="geometry">
+        <rect>
+         <x>400</x>
+         <y>540</y>
+         <width>411</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Montserrat</family>
+         <pointsize>18</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    color: white;
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Click                    to Continue.</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_53">
+       <property name="geometry">
+        <rect>
+         <x>490</x>
+         <y>540</y>
+         <width>131</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Montserrat</family>
+         <pointsize>18</pointsize>
+         <weight>75</weight>
+         <italic>true</italic>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    color: white;
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Proceed</string>
+       </property>
+      </widget>
+      <widget class="QToolButton" name="cb_confirm_backBtn">
+       <property name="geometry">
+        <rect>
+         <x>420</x>
+         <y>640</y>
+         <width>191</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Montserrat</family>
+         <pointsize>14</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QToolButton {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    border-radius: 15px;
+
+    text-align: center;
+}
+
+
+QToolButton:hover {
+    background-color: #FFC499;  /* light gray */
+	border: 2px solid #FFC499;
+}
+
+QToolButton:pressed {
+    background-color: #F56600;
+	color: white;
+    padding-top: 10px;  /* simulate press-in */
+    padding-bottom: 15px;
+ 
+}</string>
+       </property>
+       <property name="text">
+        <string>Back</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>200</width>
+         <height>200</height>
+        </size>
+       </property>
+       <property name="checkable">
+        <bool>false</bool>
+       </property>
+       <property name="popupMode">
+        <enum>QToolButton::InstantPopup</enum>
+       </property>
+       <property name="toolButtonStyle">
+        <enum>Qt::ToolButtonTextUnderIcon</enum>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="CB_InsertCoins_05">
+     <widget class="QFrame" name="InserCioins_Frame">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>20</y>
+        <width>1241</width>
+        <height>761</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>9</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QFrame {
+    background-color: #eaebec;
+	border-radius: 30px;
+}
+</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QLabel" name="label_20">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>20</y>
+         <width>141</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Montserrat</family>
+         <pointsize>18</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    color: #0f151f;
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Coinnect</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_23">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>60</y>
+         <width>231</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Montserrat</family>
+         <pointsize>8</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    color: #0f151f;
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Simplifying your financial transaction!</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="main_logo_12">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>35</y>
+         <width>40</width>
+         <height>40</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>C:/Users/Asus Tuf/Documents/dondon my documents/Research/Coinnect UI/2 Icons/Coinnect Logo.png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_25">
+       <property name="geometry">
+        <rect>
+         <x>580</x>
+         <y>140</y>
+         <width>311</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Montserrat</family>
+         <pointsize>20</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    color: #ff8731;
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Please Insert Coins</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="converter_select_backBtn_2">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>710</y>
+         <width>21</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Montserrat</family>
+         <pointsize>12</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    background-color: #eaebec;
+    border-radius: 30px;
+}
+
+
+QPushButton:pressed {
+    padding-top: 8px;  /* simulate press-in */
+    padding-bottom: 7px;
+    box-shadow: inset 0px 2px 4px rgba(255, 255, 255, 0.4); /* lighter shadow */
+}
+</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>C:/Users/Asus Tuf/Downloads/back.png</normaloff>C:/Users/Asus Tuf/Downloads/back.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>20</width>
+         <height>20</height>
+        </size>
+       </property>
+      </widget>
+      <widget class="QToolButton" name="cb_insert_due">
+       <property name="geometry">
+        <rect>
+         <x>600</x>
+         <y>370</y>
+         <width>251</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Montserrat</family>
+         <pointsize>16</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>ArrowCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QToolButton {
+    background-color: transparent;
+    color: #ff8731;
+    border: 2px solid #ff8731;
+    border-radius: 15px;
+    text-align: center;
+}</string>
+       </property>
+       <property name="text">
+        <string>Total Due: P23</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>200</width>
+         <height>200</height>
+        </size>
+       </property>
+       <property name="checkable">
+        <bool>false</bool>
+       </property>
+       <property name="popupMode">
+        <enum>QToolButton::InstantPopup</enum>
+       </property>
+       <property name="toolButtonStyle">
+        <enum>Qt::ToolButtonTextUnderIcon</enum>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_28">
+       <property name="geometry">
+        <rect>
+         <x>940</x>
+         <y>20</y>
+         <width>201</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Montserrat</family>
+         <pointsize>12</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    color: #ff8731;
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Coin and Bill Coverter</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_29">
+       <property name="geometry">
+        <rect>
+         <x>850</x>
+         <y>40</y>
+         <width>291</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Montserrat</family>
+         <pointsize>16</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    color: #0F151F;
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Coin-To-Bill Conversion</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="main_logo_13">
+       <property name="geometry">
+        <rect>
+         <x>1150</x>
+         <y>30</y>
+         <width>50</width>
+         <height>50</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>C:/Users/Asus Tuf/Documents/dondon my documents/Research/Coinnect UI/2 Icons/Black_coin to bill.png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QToolButton" name="converter_service_proceed_2">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>460</y>
+         <width>241</width>
+         <height>231</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Montserrat</family>
+         <pointsize>14</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>ArrowCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QToolButton {
+    background-color: transparent;
+    color: #ff8731;
+    border: 2px solid #ff8731;
+    border-radius: 15px;
+    padding: 20px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+
+</string>
+       </property>
+       <property name="text">
+        <string>Proceed</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>C:/Users/Asus Tuf/Documents/dondon my documents/Research/Coinnect UI/2 Icons/Peso Add.png</normaloff>C:/Users/Asus Tuf/Documents/dondon my documents/Research/Coinnect UI/2 Icons/Peso Add.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>200</width>
+         <height>200</height>
+        </size>
+       </property>
+       <property name="checkable">
+        <bool>false</bool>
+       </property>
+       <property name="popupMode">
+        <enum>QToolButton::InstantPopup</enum>
+       </property>
+       <property name="toolButtonStyle">
+        <enum>Qt::ToolButtonIconOnly</enum>
+       </property>
+      </widget>
+      <widget class="QToolButton" name="type_foreignBtn_2">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>150</y>
+         <width>241</width>
+         <height>551</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Montserrat</family>
+         <pointsize>16</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>ArrowCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QToolButton {
+    background-color: #ff8731;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding-top:30px;
+    text-align: center;
+}
+
+</string>
+       </property>
+       <property name="text">
+        <string>NOTE
+
+Excess coins
+will be
+dispensed. Tap
+proceed and
+wait for
+confirmation.
+
+
+
+
+
+
+
+
+</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>200</width>
+         <height>200</height>
+        </size>
+       </property>
+       <property name="checkable">
+        <bool>false</bool>
+       </property>
+       <property name="popupMode">
+        <enum>QToolButton::InstantPopup</enum>
+       </property>
+       <property name="toolButtonStyle">
+        <enum>Qt::ToolButtonTextOnly</enum>
+       </property>
+      </widget>
+      <widget class="QToolButton" name="cb_insert_proceed">
+       <property name="geometry">
+        <rect>
+         <x>630</x>
+         <y>610</y>
+         <width>211</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Montserrat</family>
+         <pointsize>14</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QToolButton {
+    background-color: #ff8731;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    text-align: center;
+}
+
+QToolButton:hover {
+    background-color: #FFA05C;  /* light gray */
+}
+
+QToolButton:pressed {
+    background-color: #F56600;
+    padding-top: 15px;  /* simulate press-in */
+    padding-bottom: 20px;
+ 
+}
+
+</string>
+       </property>
+       <property name="text">
+        <string>Proceed</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>200</width>
+         <height>200</height>
+        </size>
+       </property>
+       <property name="checkable">
+        <bool>false</bool>
+       </property>
+       <property name="popupMode">
+        <enum>QToolButton::InstantPopup</enum>
+       </property>
+       <property name="toolButtonStyle">
+        <enum>Qt::ToolButtonIconOnly</enum>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_30">
+       <property name="geometry">
+        <rect>
+         <x>620</x>
+         <y>200</y>
+         <width>211</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Montserrat</family>
+         <pointsize>18</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    color: #0F151F;
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Current Count</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_31">
+       <property name="geometry">
+        <rect>
+         <x>600</x>
+         <y>220</y>
+         <width>261</width>
+         <height>141</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Montserrat</family>
+         <pointsize>72</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    color: #0F151F;
+	padding-top:-100px
+}
+</string>
+       </property>
+       <property name="text">
+        <string>P0</string>
+       </property>
+       <property name="textFormat">
+        <enum>Qt::MarkdownText</enum>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="wordWrap">
+        <bool>false</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_32">
+       <property name="geometry">
+        <rect>
+         <x>460</x>
+         <y>450</y>
+         <width>61</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Montserrat</family>
+         <pointsize>14</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    color: #0F151F;
+}
+</string>
+       </property>
+       <property name="text">
+        <string>P1 = </string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_33">
+       <property name="geometry">
+        <rect>
+         <x>530</x>
+         <y>450</y>
+         <width>51</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Montserrat</family>
+         <pointsize>14</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    color: #0F151F;
+}
+</string>
+       </property>
+       <property name="text">
+        <string>0x</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_34">
+       <property name="geometry">
+        <rect>
+         <x>680</x>
+         <y>450</y>
+         <width>51</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Montserrat</family>
+         <pointsize>14</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    color: #0F151F;
+}
+</string>
+       </property>
+       <property name="text">
+        <string>0x</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_37">
+       <property name="geometry">
+        <rect>
+         <x>840</x>
+         <y>450</y>
+         <width>51</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Montserrat</family>
+         <pointsize>14</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    color: #0F151F;
+}
+</string>
+       </property>
+       <property name="text">
+        <string>0x</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_35">
+       <property name="geometry">
+        <rect>
+         <x>610</x>
+         <y>450</y>
+         <width>61</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Montserrat</family>
+         <pointsize>14</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    color: #0F151F;
+}
+</string>
+       </property>
+       <property name="text">
+        <string>P5 = </string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_36">
+       <property name="geometry">
+        <rect>
+         <x>760</x>
+         <y>450</y>
+         <width>61</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Montserrat</family>
+         <pointsize>14</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    color: #0F151F;
+}
+</string>
+       </property>
+       <property name="text">
+        <string>P10 = </string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_38">
+       <property name="geometry">
+        <rect>
+         <x>920</x>
+         <y>450</y>
+         <width>61</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Montserrat</family>
+         <pointsize>14</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    color: #0F151F;
+}
+</string>
+       </property>
+       <property name="text">
+        <string>P20 = </string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_39">
+       <property name="geometry">
+        <rect>
+         <x>1000</x>
+         <y>450</y>
+         <width>51</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Montserrat</family>
+         <pointsize>14</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    color: #0F151F;
+}
+</string>
+       </property>
+       <property name="text">
+        <string>0x</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_40">
+       <property name="geometry">
+        <rect>
+         <x>440</x>
+         <y>710</y>
+         <width>591</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Montserrat</family>
+         <pointsize>12</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    color: #0F151F;
+}
+</string>
+       </property>
+       <property name="text">
+        <string>This tab will automatically close after 60s if no money is inserted.</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="cb_secondsLabel">
+       <property name="geometry">
+        <rect>
+         <x>720</x>
+         <y>520</y>
+         <width>41</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Montserrat</family>
+         <pointsize>14</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    color: #0F151F;
+}
+</string>
+       </property>
+       <property name="text">
+        <string>60s</string>
+       </property>
+      </widget>
+      <widget class="QProgressBar" name="cb_progressbar">
+       <property name="geometry">
+        <rect>
+         <x>390</x>
+         <y>510</y>
+         <width>721</width>
+         <height>18</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QProgressBar {
+    border: 1px solid lightgray;
+    border-radius: 7px;
+    background-color: white;
+}
+
+QProgressBar::chunk {
+    background-color: #ff8731;
+    border-radius: 7px;
+}
+</string>
+       </property>
+       <property name="value">
+        <number>100</number>
+       </property>
+       <property name="textVisible">
+        <bool>false</bool>
+       </property>
+      </widget>
+      <zorder>label_31</zorder>
+      <zorder>type_foreignBtn_2</zorder>
+      <zorder>label_20</zorder>
+      <zorder>label_23</zorder>
+      <zorder>main_logo_12</zorder>
+      <zorder>label_25</zorder>
+      <zorder>converter_select_backBtn_2</zorder>
+      <zorder>cb_insert_due</zorder>
+      <zorder>label_29</zorder>
+      <zorder>main_logo_13</zorder>
+      <zorder>converter_service_proceed_2</zorder>
+      <zorder>label_28</zorder>
+      <zorder>cb_insert_proceed</zorder>
+      <zorder>label_30</zorder>
+      <zorder>label_33</zorder>
+      <zorder>label_34</zorder>
+      <zorder>label_37</zorder>
+      <zorder>label_32</zorder>
+      <zorder>label_35</zorder>
+      <zorder>label_36</zorder>
+      <zorder>label_38</zorder>
+      <zorder>label_39</zorder>
+      <zorder>label_40</zorder>
+      <zorder>cb_secondsLabel</zorder>
+      <zorder>cb_progressbar</zorder>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="CB_Dashboard_06">
+     <widget class="QFrame" name="DashboardFrame">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>20</y>
+        <width>1241</width>
+        <height>761</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>9</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QFrame {
+    background-color: #eaebec;
+	border-radius: 30px;
+}
+</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QLabel" name="label_41">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>20</y>
+         <width>141</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Montserrat</family>
+         <pointsize>18</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    color: #0f151f;
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Coinnect</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_42">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>60</y>
+         <width>231</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Montserrat</family>
+         <pointsize>8</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    color: #0f151f;
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Simplifying your financial transaction!</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="main_logo_14">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>35</y>
+         <width>40</width>
+         <height>40</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>C:/Users/Asus Tuf/Documents/dondon my documents/Research/Coinnect UI/2 Icons/Coinnect Logo.png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_43">
+       <property name="geometry">
+        <rect>
+         <x>410</x>
+         <y>190</y>
+         <width>561</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Montserrat</family>
+         <pointsize>20</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="layoutDirection">
+        <enum>Qt::LeftToRight</enum>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    color: black;
+	background-color: transparent;
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Select Denomination to Dispense</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_44">
+       <property name="geometry">
+        <rect>
+         <x>940</x>
+         <y>20</y>
+         <width>201</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Montserrat</family>
+         <pointsize>12</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    color: #ff8731;
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Coin and Bill Coverter</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_45">
+       <property name="geometry">
+        <rect>
+         <x>850</x>
+         <y>40</y>
+         <width>291</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Montserrat</family>
+         <pointsize>16</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    color: #0F151F;
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Coin-To-Bill Conversion</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="main_logo_15">
+       <property name="geometry">
+        <rect>
+         <x>1150</x>
+         <y>30</y>
+         <width>50</width>
+         <height>50</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>C:/Users/Asus Tuf/Documents/dondon my documents/Research/Coinnect UI/2 Icons/Black_coin to bill.png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QToolButton" name="type_foreignBtn_3">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>150</y>
+         <width>281</width>
+         <height>521</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Montserrat</family>
+         <pointsize>16</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>ArrowCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QToolButton {
+    background-color: #ff8731;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding-top:30px;
+    text-align: center;
+}
+
+</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>200</width>
+         <height>200</height>
+        </size>
+       </property>
+       <property name="checkable">
+        <bool>false</bool>
+       </property>
+       <property name="popupMode">
+        <enum>QToolButton::InstantPopup</enum>
+       </property>
+       <property name="toolButtonStyle">
+        <enum>Qt::ToolButtonTextOnly</enum>
+       </property>
+      </widget>
+      <widget class="QToolButton" name="cb_dashboard_proceed">
+       <property name="geometry">
+        <rect>
+         <x>670</x>
+         <y>590</y>
+         <width>211</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Montserrat</family>
+         <pointsize>14</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QToolButton {
+    background-color: #ff8731;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    text-align: center;
+}
+
+QToolButton:hover {
+    background-color: #FFA05C;  /* light gray */
+}
+
+QToolButton:pressed {
+    background-color: #F56600;
+    padding-top: 15px;  /* simulate press-in */
+    padding-bottom: 20px;
+ 
+}
+
+</string>
+       </property>
+       <property name="text">
+        <string>Proceed</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>200</width>
+         <height>200</height>
+        </size>
+       </property>
+       <property name="checkable">
+        <bool>false</bool>
+       </property>
+       <property name="popupMode">
+        <enum>QToolButton::InstantPopup</enum>
+       </property>
+       <property name="toolButtonStyle">
+        <enum>Qt::ToolButtonIconOnly</enum>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_61">
+       <property name="geometry">
+        <rect>
+         <x>420</x>
+         <y>220</y>
+         <width>651</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Montserrat</family>
+         <pointsize>12</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    color: #ff8731;
+}
+</string>
+       </property>
+       <property name="text">
+        <string>*The quantity of each denomination depends on the machine's storage.</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_62">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>200</y>
+         <width>221</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Montserrat</family>
+         <pointsize>16</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="layoutDirection">
+        <enum>Qt::LeftToRight</enum>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    color: white;
+	background-color: transparent;
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Amount Selected</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="cb_dashboard_selected">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>240</y>
+         <width>181</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Montserrat</family>
+         <pointsize>48</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="layoutDirection">
+        <enum>Qt::LeftToRight</enum>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    color: white;
+	background-color: transparent;
+}
+</string>
+       </property>
+       <property name="text">
+        <string>P0</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="cb_dashboard_tf">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>390</y>
+         <width>181</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Montserrat</family>
+         <pointsize>48</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="layoutDirection">
+        <enum>Qt::LeftToRight</enum>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    color: white;
+	background-color: transparent;
+}
+</string>
+       </property>
+       <property name="text">
+        <string>P3</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_65">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>350</y>
+         <width>221</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Montserrat</family>
+         <pointsize>16</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="layoutDirection">
+        <enum>Qt::LeftToRight</enum>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    color: white;
+	background-color: transparent;
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Transaction Fee</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="Line" name="line_6">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>530</y>
+         <width>281</width>
+         <height>5</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="QLabel" name="main_timeLabel_4">
+       <property name="geometry">
+        <rect>
+         <x>110</x>
+         <y>570</y>
+         <width>141</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Montserrat</family>
+         <pointsize>16</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="layoutDirection">
+        <enum>Qt::LeftToRight</enum>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+	background-color: transparent;
+    color: white;  /* or just #fff */
+}
+</string>
+       </property>
+       <property name="text">
+        <string>1:00PM</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="main_DateLabel_4">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>610</y>
+         <width>241</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Montserrat</family>
+         <pointsize>14</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+	background-color: transparent;
+    color: white;  /* or just #fff */
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Monday | 12.07.2025</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="cb_dashboard_20">
+       <property name="geometry">
+        <rect>
+         <x>420</x>
+         <y>300</y>
+         <width>161</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Montserrat</family>
+         <pointsize>-1</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QCheckBox {
+    color: black;
+    background-color: transparent;
+    font-size: 50px;
+}
+
+QCheckBox::indicator {
+    width: 50px;
+    height: 50px;
+}
+
+/* CHECKED */
+QCheckBox::indicator:checked {
+    background-color: #F56600;
+    border: 3px solid #F56600;
+    image: url(&quot;D:/Coinnect UI/checkWhite.png&quot;);
+}
+
+/* UNCHECKED */
+QCheckBox::indicator:unchecked {
+    background-color: white;
+    border: 3px solid #000000;
+}
+
+/* DISABLED STATE (Visually Greyed Out) */
+QCheckBox:disabled {
+    color: grey;
+}
+
+QCheckBox::indicator:disabled {
+    background-color: #CCCCCC;
+    border: 3px solid #aaaaaa;
+}
+</string>
+       </property>
+       <property name="text">
+        <string>  20</string>
+       </property>
+       <property name="tristate">
+        <bool>false</bool>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="cb_dashboard_50">
+       <property name="geometry">
+        <rect>
+         <x>740</x>
+         <y>300</y>
+         <width>161</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Montserrat</family>
+         <pointsize>-1</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QCheckBox {
+    color: black;
+    background-color: transparent;
+    font-size: 50px;
+}
+
+QCheckBox::indicator {
+    width: 50px;
+    height: 50px;
+}
+
+/* CHECKED */
+QCheckBox::indicator:checked {
+    background-color: #F56600;
+    border: 3px solid #F56600;
+    image: url(&quot;D:/Coinnect UI/checkWhite.png&quot;);
+}
+
+/* UNCHECKED */
+QCheckBox::indicator:unchecked {
+    background-color: white;
+    border: 3px solid #000000;
+}
+
+/* DISABLED STATE (Visually Greyed Out) */
+QCheckBox:disabled {
+    color: grey;
+}
+
+QCheckBox::indicator:disabled {
+    background-color: #CCCCCC;
+    border: 3px solid #aaaaaa;
+}
+</string>
+       </property>
+       <property name="text">
+        <string>  50</string>
+       </property>
+       <property name="tristate">
+        <bool>false</bool>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="cb_dashboard_100">
+       <property name="geometry">
+        <rect>
+         <x>420</x>
+         <y>420</y>
+         <width>241</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Montserrat</family>
+         <pointsize>-1</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QCheckBox {
+    color: black;
+    background-color: transparent;
+    font-size: 50px;
+}
+
+QCheckBox::indicator {
+    width: 50px;
+    height: 50px;
+}
+
+/* CHECKED */
+QCheckBox::indicator:checked {
+    background-color: #F56600;
+    border: 3px solid #F56600;
+    image: url(&quot;D:/Coinnect UI/checkWhite.png&quot;);
+}
+
+/* UNCHECKED */
+QCheckBox::indicator:unchecked {
+    background-color: white;
+    border: 3px solid #000000;
+}
+
+/* DISABLED STATE (Visually Greyed Out) */
+QCheckBox:disabled {
+    color: grey;
+}
+
+QCheckBox::indicator:disabled {
+    background-color: #CCCCCC;
+    border: 3px solid #aaaaaa;
+}
+</string>
+       </property>
+       <property name="text">
+        <string>  100</string>
+       </property>
+       <property name="tristate">
+        <bool>false</bool>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="cb_dashboard_200">
+       <property name="geometry">
+        <rect>
+         <x>740</x>
+         <y>420</y>
+         <width>241</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Montserrat</family>
+         <pointsize>-1</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QCheckBox {
+    color: black;
+    background-color: transparent;
+    font-size: 50px;
+}
+
+QCheckBox::indicator {
+    width: 50px;
+    height: 50px;
+}
+
+/* CHECKED */
+QCheckBox::indicator:checked {
+    background-color: #F56600;
+    border: 3px solid #F56600;
+    image: url(&quot;D:/Coinnect UI/checkWhite.png&quot;);
+}
+
+/* UNCHECKED */
+QCheckBox::indicator:unchecked {
+    background-color: white;
+    border: 3px solid #000000;
+}
+
+/* DISABLED STATE (Visually Greyed Out) */
+QCheckBox:disabled {
+    color: grey;
+}
+
+QCheckBox::indicator:disabled {
+    background-color: #CCCCCC;
+    border: 3px solid #aaaaaa;
+}
+</string>
+       </property>
+       <property name="text">
+        <string>  200</string>
+       </property>
+       <property name="tristate">
+        <bool>false</bool>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="converter_select_backBtn_3">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>700</y>
+         <width>21</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Montserrat</family>
+         <pointsize>12</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    background-color: #eaebec;
+    border-radius: 30px;
+}
+
+
+QPushButton:pressed {
+    padding-top: 8px;  /* simulate press-in */
+    padding-bottom: 7px;
+    box-shadow: inset 0px 2px 4px rgba(255, 255, 255, 0.4); /* lighter shadow */
+}
+</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>C:/Users/Asus Tuf/Downloads/back.png</normaloff>C:/Users/Asus Tuf/Downloads/back.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>20</width>
+         <height>20</height>
+        </size>
+       </property>
+      </widget>
+      <zorder>label_61</zorder>
+      <zorder>label_45</zorder>
+      <zorder>type_foreignBtn_3</zorder>
+      <zorder>label_41</zorder>
+      <zorder>label_42</zorder>
+      <zorder>main_logo_14</zorder>
+      <zorder>label_43</zorder>
+      <zorder>label_44</zorder>
+      <zorder>main_logo_15</zorder>
+      <zorder>cb_dashboard_proceed</zorder>
+      <zorder>label_62</zorder>
+      <zorder>cb_dashboard_selected</zorder>
+      <zorder>cb_dashboard_tf</zorder>
+      <zorder>label_65</zorder>
+      <zorder>line_6</zorder>
+      <zorder>main_timeLabel_4</zorder>
+      <zorder>main_DateLabel_4</zorder>
+      <zorder>cb_dashboard_20</zorder>
+      <zorder>cb_dashboard_50</zorder>
+      <zorder>cb_dashboard_100</zorder>
+      <zorder>cb_dashboard_200</zorder>
+      <zorder>converter_select_backBtn_3</zorder>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
